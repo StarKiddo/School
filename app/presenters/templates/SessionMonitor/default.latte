@@ -1,0 +1,15 @@
+
+
+
+{block content}
+<h1>Session Monitor</h1>
+<h2>Procentuální zastoupení navštívených stránek</h2>
+
+{php
+  foreach ($this->getParameter(frequency) as $page => $value) {
+    echo($page);
+    echo('  ');
+    echo($value . '%');
+    echo('<br>');
+  }
+}
